@@ -4,6 +4,7 @@ iframe.program {
 	border: none;
 }
 
+.reveal h1,
 .reveal h2,
 .reveal h3 {
 	text-transform: none;
