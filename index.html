@@ -6,9 +6,10 @@
 
 		<title>reveal.js</title>
 
+		<!--
 		<link rel="stylesheet" href="css/reset.css">
+		-->
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/theme/white.css">
 		<link rel="stylesheet" href="css/custom.css">
 
@@ -28,8 +29,26 @@
 		<div class="reveal">
 			<div class="slides">
 			    <section>
+			    	<h2>Numbers</h2>
+			    	<table border="2" >
+			    		<tr><td colspan="1"><center>Integer</center></td>
+			    		    <td colspan="4"><center>Non-integer</center></td></tr>
+			    		<tr><td colspan="2"><center>Rational</center></td>
+			    		    <td colspan="3"><center>Irrational</center></td></tr>
+			    		<tr><td colspan="3"><center>Algebraic</center></td>
+			    			<td colspan="2"><center>Transcendal</center></td></tr>
+			    		<tr><td colspan="4"><center>Computable</center></td>
+			    		    <td colspan="1"><center>Uncomputable</center></td></tr>
+			    		<tr><td>\[ 7 \]</td>
+			    			<td style="min-width:60px">\[ \frac{1}{3} \]</td>
+			    			<td style="min-width:60px">\[ \sqrt{2} \]</td>
+			    			<td style="min-width:60px">\[ \pi \]</td>
+			    			<td>\[ ? \]</td></tr>
+			    	</table>
+			    </section>
+			    <section>
 					<h2>Turing Machines</h2>			    	
-			    	<img src="images/TuringMachine.png" />
+			    	<img src="images/TuringMachine.png" >
 			    </section>
 				<section>
 					<h2>Example program</h2>
@@ -84,11 +103,18 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+					{ src: 'plugin/math/math.js', async: true }
+				],
+				math: {
+					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
+				}
 			});
 		</script>
 	</body>
