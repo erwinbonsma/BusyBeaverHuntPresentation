@@ -4,8 +4,13 @@ iframe.program {
 	border: none;
 }
 
+.reveal .slides {
+	text-align: left;
+}
+
 .reveal h1,
 .reveal h2,
 .reveal h3 {
 	text-transform: none;
+	text-align: center;
 }
