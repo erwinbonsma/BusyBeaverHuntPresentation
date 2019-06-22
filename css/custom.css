@@ -3,3 +3,8 @@ iframe.program {
 	height: 480px;
 	border: none;
 }
+
+.reveal h2,
+.reveal h3 {
+	text-transform: none;
+}
