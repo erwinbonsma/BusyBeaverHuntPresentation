@@ -33,87 +33,87 @@
 					<h3>by Erwin Bonsma</h3>
 					<a href="#/latest">latest</a>
 				</section>
-			    <section>
-					<h2>Turing Machines</h2>			    	
-			    	<img src="images/TuringMachine.png" >
-			    </section>
-			    <section>
-			    	<h2>Computable numbers</h2>
-			    	<table border="2" >
-			    		<tr><td colspan="1"><center>Integer</center></td>
-			    		    <td colspan="4"><center>Non-integer</center></td></tr>
-			    		<tr class="fragment" data-fragment-index="1"><td colspan="2"><center>Rational</center></td>
-			    		    <td colspan="3"><center>Irrational</center></td></tr>
-			    		<tr class="fragment" data-fragment-index="2"><td colspan="3"><center>Algebraic</center></td>
-			    			<td colspan="2"><center>Transcendal</center></td></tr>
-			    		<tr class="fragment" data-fragment-index="3"><td colspan="4"><center>Computable</center></td>
-			    		    <td colspan="1"><center>Uncomputable</center></td></tr>
-			    		<tr><td>\[ 7 \]</td>
-			    			<td style="min-width:60px" class="fragment" data-fragment-index="1">\[ \frac{1}{3} \]</td>
-			    			<td style="min-width:60px" class="fragment" data-fragment-index="2">\[ \sqrt{2} \]</td>
-			    			<td style="min-width:60px" class="fragment" data-fragment-index="3">\[ \pi \]</td>
-			    			<td class="fragment" data-fragment-index="3">\[ ? \]</td></tr>
-			    	</table>
-			    </section>
-			    <section>
-			    	<h2>Busy Beaver Problem</h2>
-			    	<p>For a given n, find the n-state binary-symbol Turing machine that:</p>
-			    	<ul>
-			    		<li>eventually halts and</li>
-			    		<li>produces the most 1's on tape</li>
-			    	</ul>
-			    	<p>This number is called \( \Sigma (n) \)</p>
-			    </section>
-			    <section>
-			    	<h2>Busy Beaver Problem (2)</h2>
-			    	<p>For a given n, find the n-state binary-symbol Turing machine that:</p>
-			    	<ul>
-			    		<li>eventually halts and</li>
-			    		<li>has executed the most instructions</li>
-			    	</ul>
-			    	<p>This number is called \( S(n) \)</p>
-			    </section>
-			    <section>
-			    	<h2>Busy Beaver functions</h2>
-			    	<p>The \( \Sigma(n) \) and \( S(n) \) Busy Beaver functions are:
-			    	<ul>
-			    		<li>well-defined,</li>
-			    		<li>non-computable, and</li>
-			    		<li>grow assymptotically faster than <em>any</em> computable function</li>
-			    	</ul>
-			    	</p>
-			    	<p>Tibor Rad&oacute;, <em>"On Non-Computable Functions"</em>, 1962</p>
-			    </section>
-			    <section>
-			    	<h2>Halting Problem</h2>
-			    	<p>The reason both Busy Beaver functions are non-computable is because of the Halting Problem:</p>
-			    	<blockquote>There is no general algorithm for deciding that a given Turing Machine halts</blockquote>
-			    	<p>Alan Turing, <em>"On Computable Numbers, with an Application to the [Decision Problem]"</em>, 1936</p> 
-			    </section>
-			    <section>
-			    	<h2>Assymptotically bigger?</h2>
-			    	<table class="fragment">
-			    		<tr><th>\(x\)</th><th>\(f(x) = (x!)!\)</th></tr>
-			    		<tr><td>1</td><td>1</td></tr>
-			    		<tr><td>2</td><td>2</td></tr>
-			    		<tr><td>3</td><td>720</td></tr>
-			    		<tr class="fragment"><td>4</td><td>&gt; \( 6.2 \times 10^{23}\)</td><td>okay...</td></tr>
-			    		<tr class="fragment"><td>5</td><td>&gt; \( 10^{198}\)</td><td>2.5 lines of text</td></tr>
-			    		<tr class="fragment"><td>10</td><td>&gt; \( 10^{22228103}\)</td><td>7000 pages of text</td></tr>
-			    	</table>
-			    </section>
-			    <section>
-			    	<h2>2L programming language</h2>
-			    	<h4>an esoteric language by Gregor Richards</h4>
-			    	<ul>
-			    	<li>2D program grid</li>
-			    	<li>Two programming symbols: DATA and TURN</li>
-			    	<li>1D data "tape" storing integers</li>
-			    	</ul>
-			    	<!--
-			    	<p>2LBB is a minor variant proposed by Mathijs Romans, modified for the Busy Beaver problem</p>
-			    	-->
-			    </section>
+				<section class="center">
+					<h2>Turing Machines</h2>
+					<img src="images/TuringMachine.png" width="600" height="400">
+				</section>
+				<section>
+					<h2>Computable numbers</h2>
+					<table border="2" >
+						<tr><td colspan="1"><center>Integer</center></td>
+						<td colspan="4"><center>Non-integer</center></td></tr>
+						<tr class="fragment" data-fragment-index="1"><td colspan="2"><center>Rational</center></td>
+						<td colspan="3"><center>Irrational</center></td></tr>
+						<tr class="fragment" data-fragment-index="2"><td colspan="3"><center>Algebraic</center></td>
+						<td colspan="2"><center>Transcendal</center></td></tr>
+						<tr class="fragment" data-fragment-index="3"><td colspan="4"><center>Computable</center></td>
+						<td colspan="1"><center>Uncomputable</center></td></tr>
+						<tr><td>\[ 7 \]</td>
+						<td style="min-width:60px" class="fragment" data-fragment-index="1">\[ \frac{1}{3} \]</td>
+						<td style="min-width:60px" class="fragment" data-fragment-index="2">\[ \sqrt{2} \]</td>
+						<td style="min-width:60px" class="fragment" data-fragment-index="3">\[ \pi \]</td>
+						<td class="fragment" data-fragment-index="3">\[ ? \]</td></tr>
+					</table>
+				</section>
+				<section>
+					<h2>Busy Beaver Problem</h2>
+					<p>For a given n, find the n-state binary-symbol Turing machine that:</p>
+					<ul>
+						<li>eventually halts and</li>
+						<li>produces the most 1's on tape</li>
+					</ul>
+					<p>This number is called \( \Sigma (n) \)</p>
+				</section>
+				<section>
+					<h2>Busy Beaver Problem (2)</h2>
+					<p>For a given n, find the n-state binary-symbol Turing machine that:</p>
+					<ul>
+						<li>eventually halts and</li>
+						<li>has executed the most instructions</li>
+					</ul>
+					<p>This number is called \( S(n) \)</p>
+				</section>
+				<section>
+					<h2>Busy Beaver functions</h2>
+					<p>The \( \Sigma(n) \) and \( S(n) \) Busy Beaver functions are:
+					<ul>
+						<li>well-defined,</li>
+						<li>non-computable, and</li>
+						<li>grow assymptotically faster than <em>any</em> computable function</li>
+					</ul>
+					</p>
+					<p>Tibor Rad&oacute;, <em>"On Non-Computable Functions"</em>, 1962</p>
+				</section>
+				<section>
+					<h2>Halting Problem</h2>
+					<p>The reason both Busy Beaver functions are non-computable is because of the Halting Problem:</p>
+					<blockquote>There is no general algorithm for deciding that a given Turing Machine halts</blockquote>
+					<p>Alan Turing, <em>"On Computable Numbers, with an Application to the [Decision Problem]"</em>, 1936</p>
+				</section>
+				<section>
+					<h2>Assymptotically bigger?</h2>
+					<table class="fragment">
+						<tr><th>\(x\)</th><th>\(f(x) = (x!)!\)</th></tr>
+						<tr><td>1</td><td>1</td></tr>
+						<tr><td>2</td><td>2</td></tr>
+						<tr><td>3</td><td>720</td></tr>
+						<tr class="fragment"><td>4</td><td>&gt; \( 6.2 \times 10^{23}\)</td><td>okay...</td></tr>
+						<tr class="fragment"><td>5</td><td>&gt; \( 10^{198}\)</td><td>2.5 lines of text</td></tr>
+						<tr class="fragment"><td>10</td><td>&gt; \( 10^{22228103}\)</td><td>7000 pages of text</td></tr>
+					</table>
+				</section>
+				<section>
+					<h2>2L programming language</h2>
+					<h4>an esoteric language by Gregor Richards</h4>
+					<ul>
+					<li>2D program grid</li>
+					<li>Two programming symbols: DATA and TURN</li>
+					<li>1D data "tape" storing integers</li>
+					</ul>
+					<!--
+					<p>2LBB is a minor variant proposed by Mathijs Romans, modified for the Busy Beaver problem</p>
+					-->
+				</section>
 				<section class="center">
 					<h2>Example program</h2>
 <figure>
@@ -164,8 +164,8 @@
 					<tr><td>TODO</td></tr>
 					</table>
 				</section>
-			    <section id="latest">
-			    </section>
+				<section id="latest">
+				</section>
 				<section>
 					<h2>Hang Detection</h2>
 					<p>The search executes each program until:
@@ -175,49 +175,49 @@
 					<li>it is assumed to hang</li>
 					</ul>
 				</section>
-			    <section>
-			    	<h2>"On the fly" interpretation</h2>
-			    </section>
-			    <section>
-			    	<h2>Static hang detection</h2>
-			    	<h4>No exits</h4>
-			    	<p>TODO: Example program</p>
-			    </section>
-			    <section>
-			    	<h2>Static hang detection</h2>
-			    	<h4>Unreachable exits</h4>
-			    	<p>TODO: Example program</p>
-			    </section>
-			    <section>
-			    	<h2>Dynamic hang detection</h2>
-			    	<h4>Periodic hangs</h4>
-			    	<p>TODO: Simple hang</p>
-			    </section>
-			    <section>
-			    	<h2>Dynamic hang detection</h2>
-			    	<h4>Periodic hangs (2)</h4>
-			    	<p>TODO: Complex hang</p>
-			    </section>
-			    <section>
-			    	<h2>Dynamic hang detection</h2>
-			    	<h4>Glider hangs</h4>
-			    	<p>TODO: Simple hang</p>
-			    </section>
-			    <section>
-			    	<h2>Dynamic hang detection</h2>
-			    	<h4>Glider hangs (2)</h4>
-			    	<p>TODO: Complex hang</p>
-			    </section>
-			    <section>
-			    	<h2>Dynamic hang detection</h2>
-			    	<h4>Sweep hangs</h4>
-			    	<p>TODO: Simple hang</p>
-			    </section>
-			    <section>
-			    	<h2>Dynamic hang detection</h2>
-			    	<h4>Sweep hangs (2)</h4>
-			    	<p>TODO: Complex hang</p>
-			    </section>
+				<section>
+					<h2>"On the fly" interpretation</h2>
+				</section>
+				<section>
+					<h2>Static hang detection</h2>
+					<h4>No exits</h4>
+					<p>TODO: Example program</p>
+				</section>
+				<section>
+					<h2>Static hang detection</h2>
+					<h4>Unreachable exits</h4>
+					<p>TODO: Example program</p>
+				</section>
+				<section>
+					<h2>Dynamic hang detection</h2>
+					<h4>Periodic hangs</h4>
+					<p>TODO: Simple hang</p>
+				</section>
+				<section>
+					<h2>Dynamic hang detection</h2>
+					<h4>Periodic hangs (2)</h4>
+					<p>TODO: Complex hang</p>
+				</section>
+				<section>
+					<h2>Dynamic hang detection</h2>
+					<h4>Glider hangs</h4>
+					<p>TODO: Simple hang</p>
+				</section>
+				<section>
+					<h2>Dynamic hang detection</h2>
+					<h4>Glider hangs (2)</h4>
+					<p>TODO: Complex hang</p>
+				</section>
+				<section>
+					<h2>Dynamic hang detection</h2>
+					<h4>Sweep hangs</h4>
+					<p>TODO: Simple hang</p>
+				</section>
+				<section>
+					<h2>Dynamic hang detection</h2>
+					<h4>Sweep hangs (2)</h4>
+					<p>TODO: Complex hang</p>
+				</section>
 				<section>
 					<h2>Hang detection results</h2>
 					<table>
@@ -225,7 +225,7 @@
 					<tr><td>3 &times; 3</td><td>0</td><td>0</td></tr>
 					<tr><td>TODO</td></tr>
 					</table>
-				</section>		    
+				</section>
 				<section class="center">
 					<h2>4x4 Busy Beaver</h2>
 <figure class="figure">
