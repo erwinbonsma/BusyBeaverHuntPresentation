@@ -8,9 +8,14 @@ iframe.program {
 	text-align: left;
 }
 
+.center {
+	text-align: center;
+}
+
 .reveal h1,
 .reveal h2,
-.reveal h3 {
+.reveal h3,
+.reveal h4 {
 	text-transform: none;
 	text-align: center;
 }
