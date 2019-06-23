@@ -79,19 +79,23 @@
 					<ul>
 						<li>well-defined,</li>
 						<li>non-computable, and</li>
-						<li>grow assymptotically faster than <em>any</em> computable function</li>
+						<li>asymptotically larger than <em>any</em> computable function</li>
 					</ul>
 					</p>
 					<p>Tibor Rad&oacute;, <em>"On Non-Computable Functions"</em>, 1962</p>
 				</section>
 				<section>
 					<h2>Halting Problem</h2>
-					<p>The reason both Busy Beaver functions are non-computable is because of the Halting Problem:</p>
+					<p>The reason both \( \Sigma(n) \) and \( S(n) \) are non-computable is because of the Halting Problem:</p>
 					<blockquote>There is no general algorithm for deciding that a given Turing Machine halts</blockquote>
 					<p>Alan Turing, <em>"On Computable Numbers, with an Application to the [Decision Problem]"</em>, 1936</p>
 				</section>
 				<section>
-					<h2>Assymptotically bigger?</h2>
+					<h2>Asymptotically larger</h2>
+					<p>The function \(f(x)\) is asymptotically larger than \(g(x)\) if there is a value \(x_{0}\) so that: \[\forall x: x > x_{0} \implies f(x) > g(x)\]</p>
+				</section>
+				<section>
+					<h2>Example computable function</h2>
 					<table class="fragment">
 						<tr><th>\(x\)</th><th>\(f(x) = (x!)!\)</th></tr>
 						<tr><td>1</td><td>1</td></tr>
