@@ -131,7 +131,7 @@
 					<p>2LBB is a minor variant proposed by Mathijs Romans, modified for the Busy Beaver problem</p>
 					-->
 				</section>
-				<section id="latest" class="center">
+				<section class="center">
 					<h2>Example program</h2>
 <figure>
 <iframe src="2LRunner.html?p=_____*___*_o__*_________oo_*o______o_________*___" class="program"></iframe>
@@ -187,8 +187,25 @@
 					<tr><td>6 &times; 6</td><td><div class="number">\(1.5 \cdot 10^{17}\)</div></td><td><div class="number">\(1.9 \cdot 10^{7}\)</div></td></tr>
 					</table>
 				</section>
-				<section>
+				<section class="center" id="latest">
 					<h2>"On the fly" interpretation</h2>
+<table><tr>
+	<td>
+<figure class="figure">
+<iframe src="2LRunner.html?p=_*_*_*o__*oo*__o*_o*o__*_" class="program"></iframe>
+</figure>
+	</td>
+	<td>
+<pre>0: INC 3 => -/1
+1: SHR 1 => 2/3
+2: INC 1 => -/4
+3: SHL 1 => EXIT
+4: DEC 1 => 5/6
+5: SHL 1 => 7/4
+6: SHR 1 => 5/6
+7: DEC 1 => -/3</pre>
+	</td>
+</tr></table>
 				</section>
 				<section> <!-- NESTING START -->
 				<section>
