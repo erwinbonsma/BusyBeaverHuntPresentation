@@ -97,26 +97,26 @@
 				</section>
 				<section>
 					<h2>Example computable function</h2>
-					<table class="fragment">
-						<tr><th>\(x\)</th><th>\(f(x) = (x!)!\)</th><th>Remarks</th></tr>
-						<tr><td>1</td><td>1</td><td>&nbsp;</td></tr>
-						<tr><td>2</td><td>2</td><td>&nbsp;</td></tr>
-						<tr><td>3</td><td>720</td><td>&nbsp;</td></tr>
-						<tr class="fragment"><td>4</td><td>&gt; \( 6.2 \cdot 10^{23}\)</td><td>okay...</td></tr>
-						<tr class="fragment"><td>5</td><td>&gt; \( 10^{198}\)</td><td>2.5 lines of text</td></tr>
-						<tr class="fragment"><td>10</td><td>&gt; \( 10^{22228103}\)</td><td>7000 pages of text</td></tr>
+					<table>
+						<tr><th>\(x\)</th><th><center>\(f(x) = (x!)!\)</center></th><th><center>Remarks</center></th></tr>
+						<tr><td>1</td><td><div class="number">1</div></td></tr>
+						<tr><td>2</td><td><div class="number">2</div></td></tr>
+						<tr><td>3</td><td><div class="number">720</div></td></tr>
+						<tr><td>4</td><td><div class="number">&gt; \( 6.2 \cdot 10^{23}\)</div></td><td>&nbsp;</td></tr>
+						<tr><td>5</td><td><div class="number">&gt; \( 10^{198}\)</div></td><td>2.5 lines of text</td></tr>
+						<tr><td>10</td><td><div class="number">&gt; \( 10^{22228103}\)</div></td><td>7000 pages of text</td></tr>
 					</table>
 				</section>
 				<section>
 					<h2>Busy Beaver Results</h2>
-					<table class="fragment">
-						<tr><th>\(n\)</th><th>\(S(n)\)</th><th>Remarks</th></tr>
-						<tr><td>2</td><td>6</td><td>&nbsp;</td></tr>
-						<tr><td>3</td><td>21</td><td>&nbsp;</td></tr>
-						<tr><td>4</td><td>107</td><td>&nbsp;</td></tr>
-						<tr class="fragment"><td>5</td><td>47176870</td><td>Still some "hold outs"</td></tr>
-						<tr class="fragment"><td>6</td><td>&gt; \( 10^{36534}\)</td><td>&nbsp;</td></tr>
-						<tr class="fragment"><td>7</td><td>&gt; \( 10^{2 \cdot 10^{10^{10^{18705353}}}}\)</td><td>Found in March 2014</td></tr>
+					<table>
+						<tr><th>\(n\)</th><th><center>\(S(n)\)</center></th><th><center>Remarks</center></th></tr>
+						<tr><td>2</td><td><div class="number">6</div></td></tr>
+						<tr><td>3</td><td><div class="number">21</div></td></tr>
+						<tr><td>4</td><td><div class="number">107</div></td><td>&nbsp;</td></tr>
+						<tr><td>5</td><td><div class="number">47176870</div></td><td>Still some "hold outs"</td></tr>
+						<tr><td>6</td><td><div class="number">&gt; \( 10^{36534}\)</div></td><td>&nbsp;</td></tr>
+						<tr><td>7</td><td><div class="number">&gt; \( 10^{2 \cdot 10^{10^{10^{18705353}}}}\)</div></td><td>Found in March 2014</td></tr>
 					</table>
 				</section>
 				<section>
@@ -177,13 +177,11 @@
 					<h4>Ignore Don't Cares (2)</h4>
 					<table>
 					<tr><th>Size</th><th># Programs</th><th># Distinct programs</th></tr>
-					<tr><td>3 &times; 3</td><td>\(2.0 \cdot 10^{4}\)</td><td>59</td></tr>
-					<tr><td>4 &times; 4</td><td>\(4.3 \cdot 10^{7}\)</td><td>\(8.9 \cdot 10^{2}\)</td></tr>
-					<tr><td>5 &times; 5</td><td>\(8.5 \cdot 10^{11}\)</td><td>\(6.0 \cdot 10^{4}\)</td></tr>
-					<tr><td>6 &times; 6</td><td>\(1.5 \cdot 10^{17}\)</td><td>\(1.9 \cdot 10^{7}\)</td></tr>
+					<tr><td>3 &times; 3</td><td><div class="number">\(2.0 \cdot 10^{4}\)</div></td><td><div class="number">59</div></td></tr>
+					<tr><td>4 &times; 4</td><td><div class="number">\(4.3 \cdot 10^{7}\)</div></td><td><div class="number">\(8.9 \cdot 10^{2}\)</div></td></tr>
+					<tr><td>5 &times; 5</td><td><div class="number">\(8.5 \cdot 10^{11}\)</div></td><td><div class="number">\(6.0 \cdot 10^{4}\)</div></td></tr>
+					<tr><td>6 &times; 6</td><td><div class="number">\(1.5 \cdot 10^{17}\)</div></td><td><div class="number">\(1.9 \cdot 10^{7}\)</div></td></tr>
 					</table>
-				</section>
-				<section id="latest">
 				</section>
 				<section>
 					<h2>"On the fly" interpretation</h2>
@@ -243,10 +241,10 @@
 					<h2>Hang detection results</h2>
 					<table>
 					<tr><th>Size</th><th># Hangs detected</th><th># Hangs assumed</th></tr>
-					<tr><td>3 &times; 3</td><td>0</td><td>0</td></tr>
-					<tr><td>4 &times; 4</td><td>25</td><td>0</td></tr>
-					<tr><td>5 &times; 5</td><td>4228</td><td>0</td></tr>
-					<tr><td>6 &times; 6</td><td>1546505</td><td>434</td></tr>
+					<tr><td>3 &times; 3</td><td><div class="number">0</div></td><td><div class="number">0</div></td></tr>
+					<tr><td>4 &times; 4</td><td><div class="number">25</div></td><td><div class="number">0</div></td></tr>
+					<tr><td>5 &times; 5</td><td><div class="number">4228</div></td><td><div class="number">0</div></td></tr>
+					<tr><td>6 &times; 6</td><td><div class="number">1546505</div></td><td><div class="number">434</div></td></tr>
 					</table>
 				</section>
 				<section class="center">
@@ -274,11 +272,11 @@
 					<h2>Search results</h2>
 					<table>
 					<tr><th>Size</th><th>Max run length</th><th>Search time</th></tr>
-					<tr><td>3 &times; 3</td><td>5</td><td>0.2 ms</td></tr>
-					<tr><td>4 &times; 4</td><td>15</td><td>0.4 ms</td></tr>
-					<tr><td>5 &times; 5</td><td>44</td><td>15 ms</td></tr>
-					<tr><td>6 &times; 6</td><td>573</td><td>9 s</td></tr>
-					<tr><td>7 &times; 7</td><td>&ge; 9607923</td><td>60 h</td></tr>
+					<tr><td>3 &times; 3</td><td><div class="number">5</div></td><td><div class="number">0.2 ms</div></td></tr>
+					<tr><td>4 &times; 4</td><td><div class="number">15</div></td><td><div class="number">0.4 ms</div></td></tr>
+					<tr><td>5 &times; 5</td><td><div class="number">44</div></td><td><div class="number">15 ms</div></td></tr>
+					<tr><td>6 &times; 6</td><td><div class="number">573</div></td><td><div class="number">9 s</div></td></tr>
+					<tr><td>7 &times; 7</td><td><div class="number">&ge; 9607923</div></td><td><div class="number">60 h</td></tr>
 					</table>
 				</section>
 				<section class="center">
