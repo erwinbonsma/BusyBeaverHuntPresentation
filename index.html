@@ -9,6 +9,7 @@
 		<!--
 		<link rel="stylesheet" href="css/reset.css">
 		-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
 		<link rel="stylesheet" href="css/custom.css">
@@ -31,7 +32,6 @@
 				<section>
 					<h1>Hunting Busy Beavers in 2L</h1>
 					<h3>by Erwin Bonsma</h3>
-					<a href="#/latest">latest</a>
 				</section>
 				<section class="center">
 					<h2>Real numbers</h2>
@@ -189,23 +189,25 @@
 				</section>
 				<section class="center" id="latest">
 					<h2>"On the fly" interpretation</h2>
-<table><tr>
-	<td>
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
 <figure class="figure">
 <iframe src="2LRunner.html?p=_*_*_*o__*oo*__o*_o*o__*_" class="program"></iframe>
 </figure>
-	</td>
-	<td>
-<pre>0: INC 3 => -/1
+							</div>
+							<div class="col-6">
+<pre><code>0: INC 3 => -/1
 1: SHR 1 => 2/3
 2: INC 1 => -/4
 3: SHL 1 => EXIT
 4: DEC 1 => 5/6
 5: SHL 1 => 7/4
 6: SHR 1 => 5/6
-7: DEC 1 => -/3</pre>
-	</td>
-</tr></table>
+7: DEC 1 => -/3</code></pre>
+							</div>
+						</div>
+					</div>
 				</section>
 				<section> <!-- NESTING START -->
 				<section>
@@ -340,7 +342,8 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
-					{ src: 'plugin/math/math.js', async: true }
+					{ src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
 				],
 				math: {
 					// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
