@@ -29,10 +29,22 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Hunting Busy Beavers in 2L</h1>
-					<h3>by Erwin Bonsma</h3>
+					<section>
+						<h1>Hunting Busy Beavers in 2L</h1>
+						<h3>by Erwin Bonsma</h3>
+					</section>
+					<section> <!-- "Vertical TOC" -->
+						<h2>Outline</h2>
+						<ul>
+						<li><a href="#/intro">Introduction</a></li>
+						<li><a href="#/bb-in-2l">Busy Beavers in 2L</a></li>
+						<li><a href="#/search-optimization">Search Optimization</a></li>
+						<li><a href="#/search-results">Search Results</a></li>
+						<li><a href="#/conclusion">Conclusion</a></li>
+						</ul>
+					</section>
 				</section>
-				<section class="center">
+				<section class="center" id="intro">
 					<h2>Real numbers</h2>
 					<table border="2">
 						<tr><td colspan="1"><center>Integer</center></td>
@@ -118,7 +130,7 @@
 						<tr><td>7</td><td><div class="number">&gt; \( 10^{2 \cdot 10^{10^{10^{18705353}}}}\)</div></td><td>Found in March 2014</td></tr>
 					</table>
 				</section>
-				<section>
+				<section id="bb-in-2l">
 					<h2>2L programming language</h2>
 					<h4>an esoteric language by Gregor Richards</h4>
 					<ul>
@@ -166,7 +178,7 @@
 					<li>Program execution time increases rapidly for increasing grid sizes</li>
 					</ul>
 				</section>
-				<section>
+				<section id="search-optimization">
 					<h2>Search optimization</h2>
 					<h4>Ignore Don't Cares</h4>
 					<ul>
@@ -207,15 +219,33 @@
 						</div>
 					</div>
 				</section>
-				<section> <!-- NESTING START -->
 				<section>
 					<h2>Hang Detection</h2>
-					<p>The search executes each program until:
+					<p>The search executes each program until:</p>
 					<ul>
 					<li>it terminates, or</li>
 					<li>it is detected that it hangs, or</li>
 					<li>it is assumed to hang</li>
 					</ul>
+				</section>
+				<section> <!-- NESTING START -->
+				<section id="hang-types">
+					<h2>Hang Types</h2>
+
+					<table>
+					<tr><th>Class</th><th>Sub-types</th></tr>
+					<tr><td>Periodic</td>
+					<td>
+					Single loop<br>
+					Nested loops
+					</td></tr>
+					<tr><td>A-periodic</td>
+					<td>
+					Sweep hangs<br>
+					Glider hangs<br>
+					...
+					</td></tr>
+					</table>
 				</section>
 				<section class="center">
 					<h3>Static hang detection</h3>
@@ -255,6 +285,7 @@
 <figcaption class="figure-caption">Simple sweep hang</figcaption>
 </figure>
 				</section>
+<!--
 				<section class="center">
 					<h3>Dynamic hang detection</h3>
 					<h4>Sweep hangs (2)</h4>
@@ -263,6 +294,7 @@
 <figcaption class="figure-caption">Sweep hang with unbalanced growth</figcaption>
 </figure>
 				</section>
+-->
 				<section class="center">
 					<h3>Dynamic hang detection</h3>
 					<h4>Glider hangs</h4>
@@ -280,7 +312,7 @@
 </figure>
 				</section>
 				</section> <!-- NESTING END -->
-				<section>
+				<section id="search-results">
 					<h2>Hang detection results</h2>
 					<table>
 					<tr><th>Size</th><th># Hangs detected</th><th># Hangs assumed</th></tr>
@@ -328,6 +360,26 @@
 <iframe src="2LRunner.html?p=___***___*oo_*_*ooo*___o*o__*_ooo_**_*___*o__o**_" class="program"></iframe>
 <figcaption class="figure-caption">9607923 steps</figcaption>
 </figure>
+				</section>
+				<section id="conclusion">
+					<ul>
+					<h2>Conclusion</h2>
+					<p>It has been fun:</p>
+					<ul>
+					<li>Exploring computing history</li>
+					<li>Tackling a challenging problem</li>
+					<li>Discovering interesting programs</li>
+					</ul>
+
+					<div class="fragment">
+					<p>It has been useful:</p>
+					<ul>
+					<li>To improve skills</li>
+					<li>To appreciate automated tests</li>
+					</ul>
+					</div>
+
+					<p class="fragment">But the journey is not over yet...</p>
 				</section>
 			</div>
 		</div>
